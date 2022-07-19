@@ -10,7 +10,7 @@ namespace CancunHotel.DataContext
         public WebApiDbContext(DbContextOptions<WebApiDbContext> options) : base(options) { }
 
         public DbSet<Room> Rooms { get; set; }
-        public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<Booking> Bookings { get; set; }
         public DbSet<Guest> Guests { get; set; }
 
 

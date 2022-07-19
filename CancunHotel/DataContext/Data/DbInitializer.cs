@@ -14,12 +14,12 @@ namespace CancunHotel.DataContext.Data
                 if(_context.Rooms.Any()) { return; }
 
                 _context.Rooms.AddRange(
-                    new Room { RoomNumber = 101, MaxDaysInAdvance = 30, CurrentStatus = Dictionary.RoomStatus.Available }
+                    new Room { RoomNumber = 101 }
                 );
 
                 if (_context.Guests.Any()) { return; }
 
-                if (_context.Reservations.Any()) { return; }
+                if (_context.Bookings.Any()) { return; }
 
             }
         }
