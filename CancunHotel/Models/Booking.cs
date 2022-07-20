@@ -10,9 +10,14 @@
         public BookingStatus CurrentStatus { get; set; }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public enum BookingStatus
     {
         cancelled,
-        active
+        active,
+        finished,
+        pending
     }
 }
