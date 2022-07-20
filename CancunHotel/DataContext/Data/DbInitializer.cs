@@ -17,6 +17,8 @@ namespace CancunHotel.DataContext.Data
                     new Room { RoomNumber = 101 }
                 );
 
+                _context.SaveChanges();
+
                 if (_context.Guests.Any()) { return; }
 
                 if (_context.Bookings.Any()) { return; }
